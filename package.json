@@ -1,0 +1,40 @@
+{
+  "name": "saleor-smoke-tests",
+  "version": "1.0.0",
+  "description": "Smoke tests for Saleor e-commerce platform using Playwright + TypeScript + Jest",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test smoke-test/",
+    "test:fast": "./run-fast-smoke.sh",
+    "test:chrome": "playwright test --project='Desktop Chrome'",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:install": "playwright install",
+    "lint": "eslint . --ext .ts,.tsx --fix",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3",
+    "eslint": "^9.14.0",
+    "@typescript-eslint/parser": "^8.12.2",
+    "@typescript-eslint/eslint-plugin": "^8.12.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "e2e",
+    "smoke-test",
+    "saleor",
+    "ecommerce"
+  ],
+  "author": "Saleor QA Team",
+  "license": "MIT"
+}
