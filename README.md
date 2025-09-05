@@ -72,6 +72,14 @@ saleor-smoke-testing/
 ### Prerequisites
 - Node.js 18+ installed
 - Saleor storefront running on `localhost:3000`
+  ```bash
+  # Start Docker Desktop
+  cd start_saleor
+  ./s4_to_s1_stop.sh
+  ./clean_up_data.sh
+  ./s1_start_saleor_and_place_order_by_graphql.sh
+  ./s2_to_s4_start_and_place_order_by_storefront.sh
+  ```
 - macOS with iTerm2 (recommended)
 
 ### Installation
