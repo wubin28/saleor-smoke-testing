@@ -34,7 +34,7 @@ test.describe('Saleor Storefront - System Basic Functionality', () => {
   });
 
   test('TC-001: Storefront homepage should load successfully and display products', async () => {
-    // Given: Saleor platform is running on localhost:3000
+    // Given: Saleor platform is running on localhost:3000 (see README.md -> Quick Start -> Prerequisites)
     // When: User accesses storefront homepage
     await homePage.goto();
 
